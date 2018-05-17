@@ -1,0 +1,18 @@
+.save {
+  padding: 25% 0 0;
+  background-image: url("/img/bg-save.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center -15%;
+}
+
+.save__preview {
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 80%;
+    margin: 3% auto;
+    background-color: rgba($color: #ffffff, $alpha: 0.1)
+  }
+}

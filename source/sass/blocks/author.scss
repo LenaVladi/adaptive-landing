@@ -1,0 +1,25 @@
+.author {
+  position: relative;
+  margin-top: 60%;
+  margin-bottom: 30%;
+  border: 2px solid $second-color;
+  padding: 40% 5% 6%;
+  background: radial-gradient(at right, #20262d, #0c121a);
+}
+
+.author__title {
+  padding: 0 0 3%;
+  margin: 0;
+}
+
+.author__photo-wrap {
+  position: absolute;
+  width: 60%;
+  top: -35%;
+  left: calc(50% - 86px);
+
+}
+
+.author__photo {
+  width: 100%;
+}
