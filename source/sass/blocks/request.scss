@@ -1,6 +1,10 @@
 .request {
   width: 100%;
-  margin: 11% 0;
+  margin: 13% 0;
+
+  &--footer {
+    margin: 5% 0;
+  }
 }
 
 .request__input {
@@ -16,5 +20,6 @@
   height: 45px;
   color: #ffffff;
   background-color: $second-color;
-  line-height: 45px;
+  font-size: 14px;
+  line-height: 41px;
 }

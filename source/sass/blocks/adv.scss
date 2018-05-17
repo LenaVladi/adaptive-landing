@@ -1,12 +1,18 @@
+.adv {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7%
+}
+
 .adv__title {
-  margin: 0;
+  margin: 0 0 4%;
 
   &::before {
     content: "";
     display: block;
     width: 137px;
-    height: 106px;
-    margin: 20px auto;
+    height: 77px;
+    margin: 0 auto 9%;
   }
 
   &--fast {
@@ -30,5 +36,5 @@
 
 .adv__desc {
   margin: 0;
-  padding: 5% 18%;
+  padding: 0 13% 15%;
 }

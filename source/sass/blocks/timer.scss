@@ -1,7 +1,7 @@
 .timer {
   display: flex;
   justify-content: space-between;
-  padding: 5% 0 0;
+  padding: 2% 0;
   margin: 0;
 }
 
@@ -22,6 +22,7 @@
     content: "";
     display: block;
     height: 2px;
+    margin: 10% 0 0;
     background-color: #ffffff;
   }
 
@@ -48,8 +49,6 @@
   display: block;
   font-size: 12px;
   height: 40px;
-  padding: 10% 0;
+  padding: 5% 0;
   line-height: 23px;
-
-
 }
