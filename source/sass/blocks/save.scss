@@ -1,0 +1,31 @@
+.save {
+  padding: 8% 0;
+  background-image: url("/img/bg-save.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center -15%;
+}
+
+.save__preview {
+  margin: 3% 0 0;
+  font-size: 15px;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 80%;
+    margin: 3% auto;
+    background-color: rgba($color: #ffffff, $alpha: 0.1)
+  }
+}
+
+.save__title {
+  font-size: 19px;
+  line-height: 28px;
+  margin: 5% 0 0;
+}
+
+.save__text {
+  margin: 7% 0;
+}

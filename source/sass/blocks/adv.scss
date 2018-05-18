@@ -1,0 +1,40 @@
+.adv {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7%
+}
+
+.adv__title {
+  margin: 0 0 4%;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 137px;
+    height: 77px;
+    margin: 0 auto 9%;
+  }
+
+  &--fast {
+    background-image: url("/img/icon-fast-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center 30%;
+  }
+
+  &--master {
+    background-image: url("/img/icon-money-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center 30%;
+  }
+
+  &--earn {
+    background-image: url("/img/icon-bag-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center 30%;
+  }
+}
+
+.adv__desc {
+  margin: 0;
+  padding: 0 13% 15%;
+}
