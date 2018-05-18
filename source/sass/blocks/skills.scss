@@ -52,3 +52,26 @@
     background-repeat: no-repeat;
   }
 }
+
+
+@media (min-width: $tablet-size) {
+  .skills__title {
+    position: relative;
+    font-size: 28px;
+    line-height: 36px;
+    padding: 10% 0 0 0;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -10%;
+    }
+  }
+
+  .skills__list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}

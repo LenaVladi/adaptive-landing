@@ -38,3 +38,48 @@
   margin: 0;
   padding: 0 13% 15%;
 }
+
+@media (min-width: $tablet-size) {
+  .adv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .adv__item {
+    width: 24%;
+    margin-right: 8%;
+
+    &:nth-child(2) {
+      order: 2;
+    }
+  }
+
+  .adv__title {
+    margin: 0 0 4%;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 137px;
+      height: 77px;
+      margin: 0 auto 9%;
+    }
+
+    &--fast {
+      background-position: left 0;
+    }
+
+    &--master {
+      background-position: left 15%;
+    }
+
+    &--earn {
+      background-position: left 15%;
+    }
+  }
+
+  .adv__desc {
+    padding: 0 0 15%;
+  }
+}

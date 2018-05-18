@@ -29,3 +29,13 @@
 .save__text {
   margin: 7% 0;
 }
+
+
+@media (min-width: $tablet-size) {
+  .save {
+    width: 100%;
+    text-align: center;
+    padding: 10%;
+    background-image: url("/img/bg-save-tablet.png");
+  }
+}

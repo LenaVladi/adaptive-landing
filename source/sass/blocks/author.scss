@@ -17,7 +17,6 @@
   width: 65%;
   top: -33%;
   left: calc(50% - 92px);
-
 }
 
 .author__photo {
@@ -41,6 +40,28 @@
   letter-spacing: 0.01em;
 }
 
-.author__desc {
 
+@media (min-width: $tablet-size) {
+  .author {
+    margin: 10% 0 10% 15%;
+    padding: 10% 8% 10% 20%;
+  }
+
+  .author__photo-wrap {
+    width: 37%;
+    top: calc(50% - 153px);
+    left: -20%;
+  }
+
+  .author__name {
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 60%;
+      margin: 5% 0 5% -25%;
+      background-color: rgba($color: #ffffff, $alpha: 0.1);
+      position: relative;
+    }
+  }
 }
