@@ -2,3 +2,9 @@
   min-width: 100%;
   padding: 10% 5% 5%;
 }
+
+@media (min-width: $tablet-size) {
+  .page {
+    padding: 8% 5% 5%;
+  }
+}

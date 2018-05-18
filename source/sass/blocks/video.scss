@@ -6,3 +6,12 @@
 .video-wrap {
   margin: -2% 2%;
 }
+
+
+@media (min-width: $tablet-size) {
+  .video-wrap {
+    margin: 0;
+    padding-top: 10%;
+    grid-area: video;
+  }
+}

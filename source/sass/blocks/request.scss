@@ -23,3 +23,18 @@
   font-size: 14px;
   line-height: 41px;
 }
+
+@media (min-width: $tablet-size) {
+  .request {
+    display: flex;
+    grid-area: request;
+  }
+
+  .request__input {
+    width: 50%;
+  }
+
+  .request__button {
+    width: 50%;
+  }
+}

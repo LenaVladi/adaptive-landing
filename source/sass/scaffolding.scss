@@ -46,11 +46,11 @@ body {
   background-color: #0c121a;
 }
 
-// @media (min-width: $tablet-width) {
-//   body {
-//     min-width: $tablet-width;
-//   }
-// }
+@media (min-width: $tablet-size) {
+  body {
+    min-width: $tablet-size;
+  }
+}
 
 // @media (min-width: $desktop-width) {
 //   body {
