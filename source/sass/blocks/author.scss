@@ -43,25 +43,36 @@
 
 @media (min-width: $tablet-size) {
   .author {
-    margin: 10% 0 10% 15%;
-    padding: 10% 8% 10% 20%;
+    margin: 12% 1% 12% 19%;
+    padding: 16% 7% 10% 24%;
   }
 
   .author__photo-wrap {
-    width: 37%;
-    top: calc(50% - 153px);
-    left: -20%;
+    width: 49%;
+    top: calc(50% - 186px);
+    left: -24%;
   }
 
   .author__name {
+    font-size: 28px;
+    margin: 0;
     &::after {
       content: "";
       display: block;
       height: 1px;
-      width: 60%;
-      margin: 5% 0 5% -25%;
+      width: 80%;
+      margin: 4% 0 6% -25%;
       background-color: rgba($color: #ffffff, $alpha: 0.1);
       position: relative;
     }
+  }
+
+  .author__title {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .author__rank {
+    margin-bottom: 6%;;
   }
 }

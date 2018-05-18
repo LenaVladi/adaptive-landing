@@ -29,23 +29,32 @@
   .request {
     display: flex;
     grid-area: request;
+    margin: 10% 0;
+
+    &--footer {
+      width: 93%;
+      margin: 1% auto 0;
+    }
 
     &--footer .request__input {
-      width: 70%;
-      text-align: left;
-      padding-left: 5%;
+      width: 68%;
     }
 
     &--footer .request__button {
-      width: 30%;
+      width: 42%;
     }
   }
 
   .request__input {
-    width: 50%;
+    height: 55px;
+    width: 52%;
+    text-align: left;
+    padding-left: 5%;
   }
 
   .request__button {
-    width: 50%;
+    height: 55px;
+    width: 47%;
+    line-height: 55px;
   }
 }

@@ -5,6 +5,7 @@
 
 @media (min-width: $tablet-size) {
   .page {
-    padding: 8% 5% 5%;
+    min-width: 750px;
+    padding: 8% 0 5% 5%;
   }
 }

@@ -44,19 +44,20 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 11%
   }
 
   .adv__item {
-    width: 24%;
-    margin-right: 8%;
+    width: 25%;
+    margin-right: 9%;
 
-    &:nth-child(2) {
-      order: 2;
+    &:nth-child(3) {
+      margin-right: 3%;
     }
   }
 
   .adv__title {
-    margin: 0 0 4%;
+    margin: 0;
     font-size: 16px;
 
     &::before {
@@ -64,7 +65,7 @@
       display: block;
       width: 137px;
       height: 77px;
-      margin: 0 auto 9%;
+      margin: 0 0 7%;
     }
 
     &--fast {
@@ -82,5 +83,14 @@
 
   .adv__desc {
     padding: 0 0 15%;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .adv__item {
+    &:nth-child(2) {
+      order: 2;
+    }
   }
 }

@@ -10,8 +10,15 @@
 
 @media (min-width: $tablet-size) {
   .video-wrap {
+    width: 113%;
     margin: 0;
-    padding-top: 10%;
+    padding: 0;
     grid-area: video;
+  }
+
+  .video__player-img {
+    width: 110%;
+    padding: 0 0 0 7%;
+    margin: -9% 0 0;
   }
 }
