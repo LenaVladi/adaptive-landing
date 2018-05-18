@@ -37,7 +37,6 @@
     box-shadow: 0 10px 0 0 rgba($color: #ffffff, $alpha: 0.1);
     left: -13%;
     top: 30%;
-
   }
 
   &--disable {
@@ -51,4 +50,11 @@
   height: 40px;
   padding: 5% 0;
   line-height: 23px;
+}
+
+@media (min-width: $tablet-size) {
+  .timer__count {
+    font-size: 60px;
+    line-height: 52px;
+  }
 }
