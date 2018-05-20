@@ -1,9 +1,26 @@
 .footer {
-  padding: 18% 0 0;
+  width: 100%;
+  background-color: black;
+  padding: 3% 0 0;
 }
 
 .footer__text {
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.03em;
+}
+
+@media (min-width: $tablet-size) {
+  .footer {
+    padding: 0.5% 0 1%;
+  }
+
+  .footer__text {
+    width: 750px;
+    margin: 0 auto;
+    padding: 0 0 0 4%;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+  }
 }

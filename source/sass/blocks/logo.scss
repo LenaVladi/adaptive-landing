@@ -8,3 +8,11 @@
 .logo__img {
   margin: 0;
 }
+
+@media (min-width: $tablet-size) {
+  .logo {
+    width: 100%;
+    margin-bottom: 10%;
+    grid-area: logo;
+  }
+}

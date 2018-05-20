@@ -2,7 +2,7 @@
   position: relative;
   margin-top: 60%;
   margin-bottom: 35%;
-  border: 2px solid $second-color;
+  border: 3px solid $second-color;
   padding: 40% 4% 10%;
   background: radial-gradient(at right, #20262d, #0c121a);
 }
@@ -17,7 +17,6 @@
   width: 65%;
   top: -33%;
   left: calc(50% - 92px);
-
 }
 
 .author__photo {
@@ -41,6 +40,41 @@
   letter-spacing: 0.01em;
 }
 
-.author__desc {
 
+@media (min-width: $tablet-size) {
+  .author {
+    margin: 12% 0 11% 19.5%;
+    padding: 16% 5% 10% 23.5%;
+  }
+
+  .author__photo-wrap {
+    width: 283px; // (49.5%)
+    top: calc(50% - 190px); // (50% - 39%)
+    left: -24.8%;
+  }
+
+  .author__name {
+    font-size: 28px;
+    letter-spacing: 0.04em;
+    margin: 0;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 80%;
+      margin: 3.5% 0 5.5% -25%;
+      background-color: rgba($color: #ffffff, $alpha: 0.1);
+      position: relative;
+    }
+  }
+
+  .author__title {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .author__rank {
+    margin: 0 0 6% 0;
+  }
 }

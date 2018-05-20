@@ -6,3 +6,10 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
+@media (min-width: $tablet-size) {
+  .font-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

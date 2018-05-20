@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preload" href="/fonts/robotolight.woff2" as="font">
+  <link rel="preload" href="/fonts/robotoregular.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.1/picturefill.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <title>ШКОЛА ТРАФИКА</title>
@@ -10,98 +15,100 @@
 <body>
   <div class="page">
     <section class="promo">
-        <div class="logo">
-          <picture>
-            <img class="logo__img" src="img/logo-mobile.png" alt="Лого">
-          </picture>
+      <div class="logo">
+        <picture>
+          <img class="logo__img" src="img/logo-mobile.png" alt="Лого">
+        </picture>
+      </div>
+      <div class="promo__description">
+        <p class="promo__title font-subtitle">Видеокурс</p>
+        <h2 class="promo__heading font-title">&Prime;&nbsp;Вступление&nbsp;в&nbsp;товарный<br>&ensp;арбитраж трафика&ensp;&Prime;</h2>
+        <p class="promo__text">Получи бесплатный видеокурс<br> по товарному арбитражу для новичков</p>
+      </div>
+      <div class="video video-wrap">
+        <!-- <video class="video__player"></video> -->
+        <picture>
+          <source  media="(min-width: 768px)" srcset="img/promo-scrin-tablet.png">
+          <img class="video__player-img" src="img/promo-scrin-mobile.png" alt="скрины 60%">
+        </picture>
+      </div>
+      <div class="request">
+        <input class="request__input" type="email" placeholder="введите ваш e-mail">
+        <a class="request__button" href="#">Скачать видеокурс</a>
+      </div>
+    </section>
+    <section class="adv">
+      <div class="adv__item">
+        <p class="adv__title adv__title--fast font-title">Быстро</p>
+        <p class="adv__desc">Вольешься в нишу интернет продаж</p>
+      </div>
+      <div class="adv__item">
+        <p class="adv__title adv__title--master font-title">Овладеешь</p>
+        <p class="adv__desc">Наиболее выгодной и&nbsp;востребованной профессией&nbsp;2016&nbsp;года</p>
+      </div>
+      <div class="adv__item">
+        <p class="adv__title adv__title--earn font-title">Зарабатывай</p>
+        <p class="adv__desc"> Деньги в любой точке&nbsp;мира</p>
+      </div>
+    </section>
+    <section class="author">
+      <div class="author__photo-wrap">
+        <source media="(min-width: 768px)" srcset="img/author-photo-tablet.png">
+        <img class="author__photo" src="img/author-photo-mobile.png" alt="Артур Гарнаев">
+      </div>
+      <div class="author__desc">
+        <p class="author__title font-subtitle">Автор видеокурса</p>
+        <p class="author__name font-title">Артур Гарнаев</p>
+        <p class="author__rank">Арбитражник, рекламодатель,<br>
+            интернет-предпрениматель</p>
+        <p class="author__text">Прокрутил рекламы более чем на 50000$ Ежедневно продаю более 150 физический товаров притом, что трафик на рекламу лью сам!</p>
+      </div>
+    </section>
+    <section class="skills">
+      <h2 class="skills__title font-title">После прохождения<br>
+          бесплатного видеокурса
+          ты&nbsp;узнаешь:</h2>
+      <ul class="skills__list">
+        <li class="skills__item">В чем суть<br> арбитража трафика?</li>
+        <li class="skills__item">Как заработать<br>
+            на арбитраже трафика?</li>
+        <li class="skills__item">Сколько можно<br>
+            заработать на товарке?</li>
+        <li class="skills__item">Как стать<br>
+            арбитражником?</li>
+        <li class="skills__item">С чего начать?</li>
+      </ul>
+    </section>
+    <section class="save">
+      <h2 class="save__title font-title">Скачай видеокурс сейчас</h2>
+      <p class="save__preview font-subtitle">И получи крутой бонус совершенно бесплатно!</p>
+      <p class="save__text">Предложение ограничего! Успей!</p>
+      <div class="timer">
+        <div class="timer__item">
+          <span class="timer__count timer__count--disable timer__count--day">0</span>
+          <span class="timer__title">дней</span>
         </div>
-        <div class="description">
-          <p class="promo__title font-subtitle">Видеокурс</p>
-          <h2 class="promo__heading font-title">&Prime;&nbsp;Вступление&nbsp;в&nbsp;товарный<br> арбитраж трафика&ensp;&Prime;</h2>
-          <p class="promo__text">Получи бесплатный видеокурс по товарному арбитражу для новичков</p>
+        <div class="timer__item">
+          <span class="timer__count timer__count--hour">9</span>
+          <span class="timer__title">часов</span>
         </div>
-        <div class="video video-wrap">
-          <!-- <video class="video__player"></video> -->
-          <picture>
-            <img class="video__player-img" src="img/promo-scrin-mobile.png" alt="скрины 60%">
-          </picture>
+        <div class="timer__item">
+          <span class="timer__count timer__count--minutes">34</span>
+          <span class="timer__title">минут</span>
         </div>
-        <div class="request">
-          <input class="request__input" type="email" placeholder="введите ваш e-mail">
-          <a class="request__button" href="#">Скачать видеокурс</a>
+        <div class="timer__item">
+          <span class="timer__count timer__count--seconds">11</span>
+          <span class="timer__title">секунд</span>
         </div>
-      </section>
-      <section class="adv">
-        <div class="adv__item">
-          <p class="adv__title adv__title--fast font-title">Быстро</p>
-          <p class="adv__desc">Вольешься в нишу интернет продаж</p>
-        </div>
-        <div class="adv__item">
-          <p class="adv__title adv__title--master font-title">Овладеешь</p>
-          <p class="adv__desc">Наиболее выгодной и&nbsp;востребованной профессией&nbsp;2016&nbsp;года</p>
-        </div>
-        <div class="adv__item">
-          <p class="adv__title adv__title--earn font-title">Зарабатывай</p>
-          <p class="adv__desc"> Деньги в любой точке&nbsp;мира</p>
-        </div>
-      </section>
-      <section class="author">
-        <div class="author__photo-wrap">
-          <img class="author__photo" src="img/author-photo-mobile.png" alt="Артур Гарнаев">
-        </div>
-        <div class="author__desc">
-          <p class="author__title font-subtitle">Автор видеокурса</p>
-          <p class="author__name font-title">Артур Гарнаев</p>
-          <p class="author__rank">Арбитражник, рекламодатель,
-              интернет-предпрениматель</p>
-          <p class="author__text">Прокрутил рекламы более чем на 50000$ Ежедневно продаю более 150 физический товаров притом, что трафик на рекламу лью сам!</p>
-        </div>
-      </section>
-      <section class="skills">
-        <h2 class="skills__title font-title">После прохождения
-            бесплатного видеокурса
-            ты&nbsp;узнаешь:</h2>
-        <ul class="skills__list">
-          <li class="skills__item">В чем суть арбитража трафика?</li>
-          <li class="skills__item">Как заработать
-              на арбитраже трафика?</li>
-          <li class="skills__item">Сколько можно
-              заработать на товарке?</li>
-          <li class="skills__item">Как стать
-              арбитражником?</li>
-          <li class="skills__item">С чего начать?</li>
-          </ul>
-      </section>
-      <section class="save">
-        <h2 class="save__title font-title">Скачай видеокурс сейчас</h2>
-        <p class="save__preview font-subtitle">И получи крутой бонус совершенно бесплатно!</p>
-        <p class="save__text">Предложение ограничего! Успей!</p>
-        <div class="timer">
-          <div class="timer__item">
-            <span class="timer__count timer__count--disable timer__count--day">0</span>
-            <span class="timer__title">дней</span>
-          </div>
-          <div class="timer__item">
-            <span class="timer__count timer__count--hour">9</span>
-            <span class="timer__title">часов</span>
-          </div>
-          <div class="timer__item">
-            <span class="timer__count timer__count--minutes">34</span>
-            <span class="timer__title">минут</span>
-          </div>
-          <div class="timer__item">
-            <span class="timer__count timer__count--seconds">11</span>
-            <span class="timer__title">секунд</span>
-          </div>
-        </div>
-        <div class="request request--footer">
-          <input  class="request__input" type="email" placeholder="введите ваш e-mail">
-          <a class="request__button" href="#">Скачать видеокурс</a>
-        </div>
-      </section>
-      <section class="footer">
-        <p class="footer__text"> <span class="footer__text font-subtitle">"Школа трафика"</span>- школа товарного арбитража трафика Артура Гарнаева (с)&nbsp;2016</p>
-      </section>
+      </div>
+      <div class="request request--footer">
+        <input  class="request__input" type="email" placeholder="введите ваш e-mail">
+        <a class="request__button" href="#">Скачать видеокурс</a>
+      </div>
+    </section>
   </div>
+    <section class="footer">
+      <p class="footer__text"> <span class="footer__text font-subtitle">"Школа трафика"</span>&ensp;-&ensp;школа товарного арбитража трафика Артура Гарнаева (с)&nbsp;2016</p>
+    </section>
 </body>
 </html>

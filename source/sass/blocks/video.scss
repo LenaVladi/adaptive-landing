@@ -6,3 +6,19 @@
 .video-wrap {
   margin: -2% 2%;
 }
+
+
+@media (min-width: $tablet-size) {
+  .video-wrap {
+    width: 100%;
+    margin: 0 0 0 3%;
+    padding: 11% 0 0 0;
+    grid-area: video;
+  }
+
+  .video__player-img {
+    width: 100%;
+    padding: 0;
+    margin: -9% 0 0;
+  }
+}
