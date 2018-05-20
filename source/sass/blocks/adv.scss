@@ -15,28 +15,29 @@
     margin: 0 auto 9%;
   }
 
-  &--fast {
-    background-image: url("/img/icon-fast-mobile.png");
+  &--fast::before {
+    background-image: url("../img/icon-fast-mobile.png");
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: 7% 20%;
   }
 
-  &--master {
-    background-image: url("/img/icon-money-mobile.png");
+  &--master::before {
+    background-image: url("../img/icon-bag-mobile.png");
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: 7% 50%;
   }
 
-  &--earn {
-    background-image: url("/img/icon-bag-mobile.png");
+  &--earn::before {
+    background-image: url("../img/icon-money-mobile.png");
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: 9% 60%;
   }
 }
 
 .adv__desc {
   margin: 0;
   padding: 0 13% 15%;
+  text-transform: lowercase;
 }
 
 @media (min-width: $tablet-size) {
@@ -44,15 +45,15 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 11%
+    padding-top: 12%
   }
 
   .adv__item {
     width: 25%;
-    margin-right: 9%;
+    margin: 0 10% 0 0;
 
     &:nth-child(3) {
-      margin-right: 3%;
+      margin-right: 2%;
     }
   }
 
@@ -65,25 +66,25 @@
       display: block;
       width: 137px;
       height: 77px;
-      margin: 0 0 7%;
+      margin: 0 0 6%;
     }
 
-    &--fast {
-      background-position: left 0;
+    &--fast::before {
+      background-position: 3% top;
     }
 
-    &--master {
-      background-position: left 15%;
+    &--master::before {
+      background-position: 3% center;
     }
 
-    &--earn {
-      background-position: left 15%;
+    &--earn::before {
+      background-position: 0 center;
     }
   }
 
   .adv__desc {
     padding: 0 0 15%;
-    line-height: 1.2;
+    line-height: 1.3;
   }
 }
 
