@@ -1,22 +1,21 @@
 .author {
   position: relative;
-  margin-top: 60%;
-  margin-bottom: 35%;
+  margin: 59.5% 0 34% 0;
   border: 3px solid $second-color;
   padding: 40% 4% 10%;
   background: radial-gradient(at right, #20262d, #0c121a);
 }
 
 .author__title {
-  padding: 0 0 1%;
+  padding: 0 0 1.5%;
   margin: 0;
 }
 
 .author__photo-wrap {
   position: absolute;
-  width: 65%;
+  width: 66%;
   top: -33%;
-  left: calc(50% - 92px);
+  left: calc(50% - 33%);
 }
 
 .author__photo {
@@ -31,6 +30,8 @@
 .author__rank {
   font-size: 15px;
   margin-bottom: 14%;
+  letter-spacing: 0.05em;
+  line-height: 18px;
 }
 
 .author__text {

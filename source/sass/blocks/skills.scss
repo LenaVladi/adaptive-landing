@@ -1,15 +1,16 @@
 .skills__title {
   text-align: left;
-  padding: 0 10% 5% 1%;
+  padding: 0 10% 5% 1.5%;
   font-size: 19px;
   line-height: 30px;
+  letter-spacing: 0.06em;
 
   &::before {
     content: "";
     display: block;
     width: 70px;
     height: 2px;
-    margin: 5% 0 10% 9%;
+    margin: 0 0 10% 6%;
     text-align: left;
     background-color: $second-color;
     box-shadow: -20px -15px 0 0 $second-color;
@@ -17,7 +18,8 @@
 }
 
 .skills__list {
-  margin: 8% 5%;
+  margin: 8% 0;
+  padding: 0 0 0 8.5%;
   //list-style-image: url("../img/cursor.png");
   list-style-type: none;
 }
@@ -26,7 +28,8 @@
   height: 100px;
   margin: 0;
   line-height: 24px;
-  padding: 0 0 2% 18%;
+  letter-spacing: 0.04em;
+  padding: 0 0 2% 23%;
   text-align: left;
   position: relative;
 
@@ -36,7 +39,7 @@
     position: absolute;
     width: 29px;
     height: 30px;
-    top: 0;
+    top: -2.5%;
     left: 0;
     background-image: url("../img/cursor.png");
   }
@@ -44,31 +47,31 @@
   &:nth-child(1) {
     background-image: url("../img/1.png");
     background-repeat: no-repeat;
-    background-position-x: 11%;
+    background-position-x: 18%;
   }
 
   &:nth-child(2) {
     background-image: url("../img/2.png");
     background-repeat: no-repeat;
-    background-position-x: 11%;
+    background-position-x: 18%;
   }
 
   &:nth-child(3) {
     background-image: url("../img/3.png");
     background-repeat: no-repeat;
-    background-position-x: 11%;
+    background-position-x: 18%;
   }
 
   &:nth-child(4) {
     background-image: url("../img/4.png");
     background-repeat: no-repeat;
-    background-position-x: 11%;
+    background-position-x: 18%;
   }
 
   &:nth-child(5) {
     background-image: url("../img/5.png");
     background-repeat: no-repeat;
-    background-position-x: 11%;
+    background-position-x: 18%;
   }
 }
 
@@ -105,5 +108,9 @@
     width: 50%;
     margin: 0;
     padding: 0 0 2% 9%;
+
+    &::before {
+      top: 0;
+    }
   }
 }

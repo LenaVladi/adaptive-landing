@@ -1,7 +1,11 @@
 .adv {
   display: flex;
   flex-direction: column;
-  padding-top: 7%
+  padding-top: 17.5%
+}
+
+.adv__item {
+  margin: 0 0 1% 0;
 }
 
 .adv__title {
@@ -10,27 +14,27 @@
   &::before {
     content: "";
     display: block;
-    width: 137px;
+    width: 136px;
     height: 77px;
-    margin: 0 auto 9%;
+    margin: 0 auto 7.4%;
   }
 
   &--fast::before {
     background-image: url("../img/icon-fast-mobile.png");
     background-repeat: no-repeat;
-    background-position: 7% 20%;
+    background-position: center 20%;
   }
 
   &--master::before {
-    background-image: url("../img/icon-bag-mobile.png");
+    background-image: url("../img/icon-money-mobile.png");
     background-repeat: no-repeat;
-    background-position: 7% 50%;
+    background-position: center center;
   }
 
   &--earn::before {
-    background-image: url("../img/icon-money-mobile.png");
+    background-image: url("../img/icon-bag-mobile.png");
     background-repeat: no-repeat;
-    background-position: 9% 60%;
+    background-position: center center;
   }
 }
 
