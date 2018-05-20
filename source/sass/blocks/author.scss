@@ -76,6 +76,36 @@
   }
 
   .author__rank {
-    margin: 0 0 6% 0;
+    margin: 0 0 5% 0;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .author {
+    margin: 7.5% 13% 0 25%;
+    padding: 12% 8% 9.5% 22.5%;
+  }
+
+  .author__rank {
+    font-size: 14px;
+    margin: 0 0 14% 0;
+  }
+
+  .author__photo-wrap {
+    width: 51%; // (49.5%)
+    top: calc(50% - 40%); // (50% - 39%)
+    left: -25.8%;
+  }
+
+  .author__name {
+    font-size: 40px;
+
+    &::after {
+      margin: 1.5% 0 5.5% -25%;
+    }
+  }
+
+  .author__text {
+    font-size: 18px;
   }
 }

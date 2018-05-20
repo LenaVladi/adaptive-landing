@@ -28,13 +28,17 @@
       <div class="video video-wrap">
         <!-- <video class="video__player"></video> -->
         <picture>
-          <source  media="(min-width: 768px)" srcset="img/promo-scrin-tablet.png">
-          <img class="video__player-img" src="img/promo-scrin-mobile.png" alt="скрины 60%">
+          <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/scrin-desktop@1x.webp 1x, img/scrin-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/scrin-desktop@1x.webp 1x, img/scrin-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/scrin-mobile@1x.webp 1x, img/scrin-mobile@2x.webp 2x"> -->
+          <source  media="(min-width: 1498px)" srcset="img/scrin-desktop@1x.png 1x, img/scrin-desktop@2x.png 2x">
+          <source  media="(min-width: 768px)" srcset="img/scrin-tablet@1x.png 2x, img/scrin-tablet@2x.png 2x">
+          <img class="video__player-img" src="img/scrin-mobile@1x.png 1x" srcset="img/scrin-mobile@2x.png 2x" alt="скрины 60%">
         </picture>
       </div>
       <div class="request">
         <input class="request__input" type="email" placeholder="введите ваш e-mail">
-        <a class="request__button" href="#">Скачать видеокурс</a>
+        <button class="request__button" type="submit">Скачать видеокурс</buttin>
       </div>
     </section>
     <section class="adv">
@@ -53,8 +57,12 @@
     </section>
     <section class="author">
       <div class="author__photo-wrap">
-        <source media="(min-width: 768px)" srcset="img/author-photo-tablet.png">
-        <img class="author__photo" src="img/author-photo-mobile.png" alt="Артур Гарнаев">
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/author-photo-desktop@1x.webp 1x, img/author-photo-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/author-photo-tablet@1x.webp 2x, img/author-photo-tablet@1x.webp 2x">
+        <source type="image/webp" srcset="img/author-photo-mobile@1x.webp 1x, img/author-photo-mobile@2x.webp 2x">
+        <source media="(min-width: 1498px)" srcset="img/author-photo-desktop@1x.jpg 1x, img/author-photo-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/author-photo-tablet@1x.jpg 2x, img/author-photo-tablet@1x.jpg 2x">
+        <img class="author__photo" src="img/author-photo-mobile@1x.jpg 1x" srcset="img/author-photo-mobile@2x.jpg 2x" alt="Артур Гарнаев">
       </div>
       <div class="author__desc">
         <p class="author__title font-subtitle">Автор видеокурса</p>
@@ -82,28 +90,31 @@
     <section class="save">
       <h2 class="save__title font-title">Скачай видеокурс сейчас</h2>
       <p class="save__preview font-subtitle">И получи крутой бонус совершенно бесплатно!</p>
-      <p class="save__text">Предложение ограничего! Успей!</p>
-      <div class="timer">
-        <div class="timer__item">
-          <span class="timer__count timer__count--disable timer__count--day">0</span>
-          <span class="timer__title">дней</span>
+      <!-- <p class="save__text">Предложение ограничего! Успей!</p> -->
+      <article class="timer">
+        <p class="timer__offer">Предложение ограничего! Успей!</p>
+        <div class="timer__wrap">
+          <div class="timer__item">
+            <span class="timer__count timer__count--disable timer__count--day">0</span>
+            <span class="timer__title">дней</span>
+          </div>
+          <div class="timer__item">
+            <span class="timer__count timer__count--hour">9</span>
+            <span class="timer__title">часов</span>
+          </div>
+          <div class="timer__item">
+            <span class="timer__count timer__count--minutes">34</span>
+            <span class="timer__title">минут</span>
+          </div>
+          <div class="timer__item">
+            <span class="timer__count timer__count--seconds">11</span>
+            <span class="timer__title">секунд</span>
+          </div>
         </div>
-        <div class="timer__item">
-          <span class="timer__count timer__count--hour">9</span>
-          <span class="timer__title">часов</span>
-        </div>
-        <div class="timer__item">
-          <span class="timer__count timer__count--minutes">34</span>
-          <span class="timer__title">минут</span>
-        </div>
-        <div class="timer__item">
-          <span class="timer__count timer__count--seconds">11</span>
-          <span class="timer__title">секунд</span>
-        </div>
-      </div>
+      </article>
       <div class="request request--footer">
         <input  class="request__input" type="email" placeholder="введите ваш e-mail">
-        <a class="request__button" href="#">Скачать видеокурс</a>
+        <button class="request__button" type="submit">Скачать видеокурс</button>
       </div>
     </section>
   </div>

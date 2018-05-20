@@ -21,17 +21,13 @@
 
 @media (min-width: $tablet-size) {
   .promo {
-    display: grid;
-    grid-template-columns: 59% auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "logo logo"
-    "description video"
-    "request video";
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
 
   .promo__description {
-    grid-area: description;
+    width: 55%;
   }
 
   .promo__title {
@@ -50,5 +46,23 @@
   .promo__text {
     padding: 1.5% 3% 1.5% 0;
     letter-spacing: 0.05em;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .promo {
+    width: 1140px;
+  }
+
+  .promo__heading {
+    font-size: 40px;
+    margin: 0 0 0 -4.2%;
+    padding: 1% 0 0;
+    letter-spacing: 0.02em;
+    line-height: 51px;
+  }
+
+  .promo__text {
+    padding: 2% 3% 2% 0;
   }
 }

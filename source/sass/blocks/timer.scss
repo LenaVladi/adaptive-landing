@@ -1,7 +1,5 @@
 .timer {
-  display: flex;
-  justify-content: space-between;
-  padding: 2% 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -14,6 +12,17 @@
   &:last-child {
     margin: 0;
   }
+}
+
+.timer__offer {
+  margin: 7% 0;
+}
+
+.timer__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 2% 0;
 }
 
 .timer__count {
@@ -57,7 +66,11 @@
 }
 
 @media (min-width: $tablet-size) {
-  .timer {
+  .timer__offer {
+    margin: 5% 0;
+  }
+
+  .timer__wrap {
     padding: 5% 6% 5% 4%;
   }
 
@@ -81,5 +94,17 @@
 
   .timer__title {
     font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .timer__offer {
+    margin: 0 0 1%;
+  }
+
+  .timer__wrap {
+    width: 600px;
+    margin: 2% auto;
+    padding: 5% 5% 0 0;
   }
 }
