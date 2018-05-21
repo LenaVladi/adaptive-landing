@@ -20,19 +20,19 @@
   }
 
   &--fast::before {
-    background-image: url("../img/icon-fast-mobile.png");
+    background-image: url("../img/icon-fast.png");
     background-repeat: no-repeat;
     background-position: center 20%;
   }
 
   &--master::before {
-    background-image: url("../img/icon-money-mobile.png");
+    background-image: url("../img/icon-money.png");
     background-repeat: no-repeat;
     background-position: center center;
   }
 
   &--earn::before {
-    background-image: url("../img/icon-bag-mobile.png");
+    background-image: url("../img/icon-bag.png");
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -78,12 +78,12 @@
     }
 
     &--master::before {
-      background-image: url("../img/icon-bag-mobile.png");
+      background-image: url("../img/icon-bag.png");
       background-position: 3% center;
     }
 
     &--earn::before {
-      background-image: url("../img/icon-money-mobile.png");
+      background-image: url("../img/icon-money.png");
       background-position: 0 center;
     }
   }
