@@ -3,7 +3,7 @@
   padding: 10% 5% 15%;
   background-image: url("../img/bg-scrin-mobile.png"), url("../img/bg-save-mobile.png");
   background-repeat: no-repeat;
-  background-position: 0 6.6%, 0 94.4%;
+  background-position: center 6.6%, center 94.4%;
   //overflow-x: hidden;
 }
 
@@ -11,16 +11,17 @@
   .page {
     width: 750px;
     margin: 0 auto;
-    padding: 7.5% 1.7% 15% 1.7%;
+    padding: 8% 1.7% 15% 1.7%;
     background-image: url("../img/bg-scrin-tablet.png"), url("../img/bg-save-tablet.png");
-    background-repeat: no-repeat;
-    background-position: 130% 2.3%, 70% 97.5%;
+    background-position: 130% 2.3%, center 97.5%;
   }
 }
 
 @media (min-width: $desktop-size) {
   .page {
     width: 1498px;
-    padding: 8% 10% 0 10%;
+    padding: 4% 10% 9.5%;
+    background-image: url("../img/bg-scrin-desktop.png"), url("../img/bg-save-desktop.png");
+    background-position: 99% 0, center 97.5%;
   }
 }

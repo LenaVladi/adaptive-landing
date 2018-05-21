@@ -1,7 +1,7 @@
 .adv {
   display: flex;
   flex-direction: column;
-  padding-top: 17.5%
+  padding-top: 17.5%;
 }
 
 .adv__item {
@@ -20,19 +20,19 @@
   }
 
   &--fast::before {
-    background-image: url("../img/icon-fast-mobile.png");
+    background-image: url("../img/icon-fast.png");
     background-repeat: no-repeat;
     background-position: center 20%;
   }
 
   &--master::before {
-    background-image: url("../img/icon-money-mobile.png");
+    background-image: url("../img/icon-money.png");
     background-repeat: no-repeat;
     background-position: center center;
   }
 
   &--earn::before {
-    background-image: url("../img/icon-bag-mobile.png");
+    background-image: url("../img/icon-bag.png");
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -49,7 +49,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 12%
+    padding-top: 11%;
   }
 
   .adv__item {
@@ -78,10 +78,12 @@
     }
 
     &--master::before {
+      background-image: url("../img/icon-bag.png");
       background-position: 3% center;
     }
 
     &--earn::before {
+      background-image: url("../img/icon-money.png");
       background-position: 0 center;
     }
   }
@@ -93,9 +95,25 @@
 }
 
 @media (min-width: $desktop-size) {
+  .adv {
+    padding: 14% 0 0 9.5%;
+  }
+
   .adv__item {
-    &:nth-child(2) {
-      order: 2;
+    margin-right: 9.5%;
+  }
+
+  .adv__title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 40px;
+
+    &::before {
+      margin: 0 0 4%;
     }
+  }
+
+  .adv__desc {
+    padding-right: 10%;
   }
 }

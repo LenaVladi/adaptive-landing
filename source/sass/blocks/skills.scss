@@ -99,7 +99,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
-    padding: 9% 0 0 9%;
+    padding: 9.5% 0 0 9%;
     width: 95%;
     height: 400px;
   }
@@ -111,6 +111,126 @@
 
     &::before {
       top: 0;
+    }
+
+    &:nth-child(1) {
+      background-position-x: 12%;
+    }
+
+    &:nth-child(2) {
+      background-position-x: 12%;
+    }
+
+    &:nth-child(3) {
+      background-position-x: 12%;
+    }
+
+    &:nth-child(4) {
+      background-position-x: 12%;
+    }
+
+    &:nth-child(5) {
+      background-position-x: 12%;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .skills {
+    width: $desktop-size;
+    position: relative;
+    left: -12.5%;
+    background-image: url("../img/line@1x.png"), url("../img/markings.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom, center bottom;
+  }
+
+  .skills__title {
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: 0.02em;
+    padding: 11% 0 5% 9.5%;
+
+    &::before {
+      top: 41.5%;
+      left: 1%;
+    }
+  }
+
+  .skills__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 0 0 10%;
+    position: relative;
+  }
+
+  .skills__item {
+    position: absolute;
+    width: 250px;
+    padding: 1% 0 0 1.7%;
+
+
+    &::before {
+      width: 39px;
+      height: 40px;
+      background-image: url("../img/cursor-desktop.png");
+    }
+
+    &:nth-child(1) {
+      top: 37%;
+      left: 9.6%;
+      background-position: 0 -1%;
+    }
+
+    &:nth-child(1)::before {
+      top: 134%;
+      left: 5%;
+    }
+
+    &:nth-child(2) {
+      top: 16%;
+      left: 32%;
+      background-position: 0 -1%;
+    }
+
+    &:nth-child(2)::before {
+      top: 135%;
+      left: 0.5%;
+    }
+
+    &:nth-child(3) {
+      width: 220px;
+      top: 40%;
+      left: 46.5%;
+      background-position: 0 -1%;
+    }
+
+    &:nth-child(3)::before {
+      top: 143.6%;
+      left: 5.5%;
+    }
+
+    &:nth-child(4) {
+      top: 16%;
+      left: 63.3%;
+      background-position: 0 -1%;
+    }
+
+    &:nth-child(4)::before {
+      top: 123%;
+      left: 6.5%;
+    }
+
+    &:nth-child(5) {
+      top: 7%;
+      left: 79.5%;
+      background-position: 0 -1%;
+    }
+
+    &:nth-child(5)::before {
+      top: 95%;
+      left: 1%;
     }
   }
 }

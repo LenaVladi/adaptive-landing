@@ -12,7 +12,7 @@
     height: 2px;
     width: 80%;
     margin: 3% auto;
-    background-color: rgba($color: #ffffff, $alpha: 0.1)
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
   }
 }
 
@@ -22,11 +22,6 @@
   letter-spacing: 0.07em;
   margin: 5% 0 0;
 }
-
-.save__text {
-  margin: 7% 0;
-}
-
 
 @media (min-width: $tablet-size) {
   .save {
@@ -49,8 +44,26 @@
       margin: 5% auto;
     }
   }
+}
 
-  .save__text {
-    margin: 5% 0;
+@media (min-width: $desktop-size) {
+  .save {
+    padding: 10% 8% 8% 8%;
+  }
+
+  .save__title {
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: 0.02em;
+    padding-right: 4%;
+  }
+
+  .save__preview {
+    font-size: 18px;
+    margin: 1.5% 0;
+
+    &::after {
+      margin: 3% auto 0;
+    }
   }
 }

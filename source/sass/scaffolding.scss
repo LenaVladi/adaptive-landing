@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Roboto";
-  src: url("robotoregular.woff2") format("woff2"), url("robotoregular.woff") format("woff") format("woff");
+  src: url("../fonts/robotoregular.woff2") format("woff2"), url("../fonts/robotoregular.woff") format("woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("robotolight.woff2") format("woff2"), url("robotolight.woff") format("woff");
+  src: url("../fonts/robotolight.woff2") format("woff2"), url("../fonts/robotolight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -57,5 +57,8 @@ body {
 @media (min-width: $desktop-size) {
   body {
     min-width: $desktop-size;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 24px;
   }
 }
