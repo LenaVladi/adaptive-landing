@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="preload" href="/fonts/robotolight.woff2" as="font">
-  <link rel="preload" href="/fonts/robotoregular.woff2" as="font">
+  <link rel="preload" href="fonts/robotolight.woff2" as="font">
+  <link rel="preload" href="fonts/robotoregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.1/picturefill.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
@@ -22,7 +22,7 @@
       </div>
       <div class="promo__description">
         <p class="promo__title font-subtitle">Видеокурс</p>
-        <h2 class="promo__heading font-title">&Prime;&nbsp;Вступление&nbsp;в&nbsp;товарный<br>&ensp;&ensp;арбитраж трафика&ensp;&Prime;</h2>
+        <h2 class="promo__heading font-title">&Prime;&nbsp;Вступление&nbsp;в&nbsp;товарный<br>&ensp;арбитраж трафика&ensp;&Prime;</h2>
         <p class="promo__text">Получи бесплатный видеокурс<br> по товарному арбитражу для новичков</p>
       </div>
       <div class="video video-wrap">
@@ -32,41 +32,43 @@
           <source type="image/webp" media="(min-width: 768px)" srcset="img/scrin-desktop@1x.webp 1x, img/scrin-desktop@2x.webp 2x">
           <source type="image/webp" srcset="img/scrin-mobile@1x.webp 1x, img/scrin-mobile@2x.webp 2x"> -->
           <source  media="(min-width: 1498px)" srcset="img/scrin-desktop@1x.png 1x, img/scrin-desktop@2x.png 2x">
-          <source  media="(min-width: 768px)" srcset="img/scrin-tablet@1x.png 2x, img/scrin-tablet@2x.png 2x">
-          <img class="video__player-img" src="img/scrin-mobile@1x.png 1x" srcset="img/scrin-mobile@2x.png 2x" alt="скрины 60%">
+          <source  media="(min-width: 768px)" srcset="img/scrin-tablet@1x.png 1x, img/scrin-tablet@2x.png 2x">
+          <img class="video__player-img" src="img/scrin-mobile@1x.png" srcset="img/scrin-mobile@2x.png 2x" alt="скрины 60%">
         </picture>
       </div>
       <div class="request">
         <input class="request__input" type="email" placeholder="введите ваш e-mail">
-        <button class="request__button" type="submit">Скачать видеокурс</buttin>
+        <button class="request__button" type="submit">Скачать видеокурс</button>
       </div>
     </section>
     <section class="adv">
       <div class="adv__item">
-        <p class="adv__title adv__title--fast font-title">Быстро</p>
+        <h3 class="adv__title adv__title--fast font-title">Быстро</h3>
         <p class="adv__desc">Вольешься в нишу интернет продаж</p>
       </div>
       <div class="adv__item">
-        <p class="adv__title adv__title--master font-title">Овладеешь</p>
+        <h3 class="adv__title adv__title--master font-title">Овладеешь</h3>
         <p class="adv__desc">Наиболее выгодной и&nbsp;востребованной профессией&nbsp;2016&nbsp;года</p>
       </div>
       <div class="adv__item">
-        <p class="adv__title adv__title--earn font-title">Зарабатывай</p>
+        <h3 class="adv__title adv__title--earn font-title">Зарабатывай</h3>
         <p class="adv__desc"> Деньги в любой точке&nbsp;мира</p>
       </div>
     </section>
     <section class="author">
       <div class="author__photo-wrap">
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/author-photo-desktop@1x.webp 1x, img/author-photo-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/author-photo-tablet@1x.webp 2x, img/author-photo-tablet@1x.webp 2x">
-        <source type="image/webp" srcset="img/author-photo-mobile@1x.webp 1x, img/author-photo-mobile@2x.webp 2x">
-        <source media="(min-width: 1498px)" srcset="img/author-photo-desktop@1x.jpg 1x, img/author-photo-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/author-photo-tablet@1x.jpg 2x, img/author-photo-tablet@1x.jpg 2x">
-        <img class="author__photo" src="img/author-photo-mobile@1x.jpg 1x" srcset="img/author-photo-mobile@2x.jpg 2x" alt="Артур Гарнаев">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/author-photo-desktop@1x.webp 1x, img/author-photo-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/author-photo-tablet@1x.webp 1x, img/author-photo-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/author-photo-mobile@1x.webp 1x, img/author-photo-mobile@2x.webp 2x">
+          <source media="(min-width: 1498px)" srcset="img/author-photo-desktop@1x.jpg 1x, img/author-photo-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/author-photo-tablet@1x.jpg 1x, img/author-photo-tablet@2x.jpg 2x">
+          <img class="author__photo" src="img/author-photo-mobile@1x.jpg" srcset="img/author-photo-mobile@2x.jpg 2x" alt="Артур Гарнаев">
+        </picture>
       </div>
       <div class="author__desc">
-        <p class="author__title font-subtitle">Автор видеокурса</p>
-        <p class="author__name font-title">Артур Гарнаев</p>
+        <h4 class="author__title font-subtitle">Автор видеокурса</h4>
+        <h3 class="author__name font-title">Артур Гарнаев</h3>
         <p class="author__rank">Арбитражник, рекламодатель,<br>
             интернет-предпрениматель</p>
         <p class="author__text">Прокрутил рекламы более чем на 50000$ Ежедневно продаю более 150 физический товаров притом, что трафик на рекламу лью сам!</p>

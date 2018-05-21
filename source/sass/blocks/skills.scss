@@ -149,7 +149,7 @@
     font-size: 40px;
     line-height: 54px;
     letter-spacing: 0.02em;
-    padding: 11.5% 0 5% 9.5%;
+    padding: 11% 0 5% 9.5%;
 
     &::before {
       top: 41.5%;
@@ -178,7 +178,7 @@
     }
 
     &:nth-child(1) {
-      top: 36%;
+      top: 37%;
       left: 9.6%;
       background-position: 0 -1%;
     }
@@ -189,7 +189,7 @@
     }
 
     &:nth-child(2) {
-      top: 15%;
+      top: 16%;
       left: 32%;
       background-position: 0 -1%;
     }
@@ -201,36 +201,36 @@
 
     &:nth-child(3) {
       width: 220px;
-      top: 39%;
+      top: 40%;
       left: 46.5%;
       background-position: 0 -1%;
     }
 
     &:nth-child(3)::before {
-      top: 143%;
-      left: 2.5%;
+      top: 143.6%;
+      left: 5.5%;
     }
 
     &:nth-child(4) {
-      top: 14%;
-      left: 63.5%;
+      top: 16%;
+      left: 63.3%;
       background-position: 0 -1%;
     }
 
     &:nth-child(4)::before {
-      top: 126%;
-      left: 4.6%;
+      top: 123%;
+      left: 6.5%;
     }
 
     &:nth-child(5) {
-      top: 6%;
+      top: 7%;
       left: 79.5%;
       background-position: 0 -1%;
     }
 
     &:nth-child(5)::before {
       top: 95%;
-      left: 3%;
+      left: 1%;
     }
   }
 }

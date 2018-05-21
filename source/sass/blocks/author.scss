@@ -83,12 +83,13 @@
 @media (min-width: $desktop-size) {
   .author {
     margin: 7.5% 13% 0 25%;
-    padding: 12% 8% 9.5% 22.5%;
+    padding: 12% 5% 9.5% 22.5%;
   }
 
   .author__rank {
     font-size: 14px;
-    margin: 0 0 14% 0;
+    letter-spacing: 0.05em;
+    margin: 0 0 13% 0;
   }
 
   .author__photo-wrap {
@@ -101,11 +102,12 @@
     font-size: 40px;
 
     &::after {
-      margin: 1.5% 0 5.5% -25%;
+      margin: 1.5% 0 4.3% -25%;
     }
   }
 
   .author__text {
     font-size: 18px;
+    letter-spacing: 0.05em;
   }
 }

@@ -13,13 +13,13 @@
 
 @media (min-width: $tablet-size) {
   .footer {
-    padding: 4% 0 3.5%;
+    padding: 4% 0;
   }
 
   .footer__text {
     width: 750px;
     margin: 0 auto;
-    padding: 0 0 0 4%;
+    padding: 0 0 0 1%;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.04em;
@@ -27,5 +27,12 @@
 }
 
 @media (min-width: $desktop-size) {
+  .footer {
+    padding: 1.5% 0;
+  }
 
+  .footer__text {
+    width: 1140px;
+    padding: 0;
+  }
 }
